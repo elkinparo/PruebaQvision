@@ -17,7 +17,9 @@ public class loggin implements Task
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.wasAbleTo(Click.on(Loggin.SIG_IN),
-                Enter.theValue(data.getNAME()).into(Loggin.USER));
+                Enter.theValue(data.getNAME()).into(Loggin.USER),
+                Enter.theValue(data.getPASWORD()).into(Loggin.PASWORD),
+                Click.on(Loggin.LOGIN));
     }
 
     public static loggin format(shopingpets data){return Tasks.instrumented(loggin.class,data);}

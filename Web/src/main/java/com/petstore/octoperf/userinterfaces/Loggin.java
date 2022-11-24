@@ -9,5 +9,7 @@ public class Loggin
 
     }
     public static final Target SIG_IN = Target.the("SIG_IN").located(By.xpath("//*[text()='Sign In']"));
-    public static final Target USER = Target.the("USER").located(By.id("stripes-1181717825"));
+    public static final Target USER = Target.the("USER").located(By.xpath("//*[text()='Username:']//following::input"));
+    public static final Target PASWORD = Target.the("PASWORD").located(By.xpath("//input[contains(@name,'password')]"));
+    public static final Target LOGIN = Target.the("LOGIN").located(By.xpath("//input[contains(@name,'signon')]"));
 }
