@@ -8,7 +8,7 @@ public class Register
     private Register() {
     }
     public static final Target REGISTER_NOW = Target.the("REGISTER_NOW").located(By.xpath("//*[text()='Register Now!']"));
-    public static final Target USER_ID = Target.the("USER_ID").located(By.id("stripes--2108566156"));
+    public static final Target USER_ID = Target.the("USER_ID").located(By.xpath("//input[@name='username']"));
     public static final Target NEW_PASSWORD = Target.the("NEW_PASSWORD").located(By.xpath("//input[@name='password']"));
     public static final Target REPEAT_PASSWORD = Target.the("REPEAT_PASSWORD").located(By.xpath("//input[@name='repeatedPassword']"));
     public static final Target FIRST_NAME = Target.the("FIRST_NAME").located(By.xpath("//input[@name='account.firstName']"));
@@ -24,5 +24,6 @@ public class Register
     public static final Target ENABLE_MY_LIST = Target.the("ENABLE_MY_LIST").located(By.xpath("//input[@name='account.listOption']"));
     public static final Target ENABLE_MY_BANNER = Target.the("ENABLE_MY_BANNER").located(By.xpath("//input[@name='account.bannerOption']"));
     public static final Target SAVE = Target.the("SAVE").located(By.xpath("//input[@name='newAccount']"));
+    public static final Target IMAGE = Target.the("IMAGE").located(By.xpath("//*[@usemap='#estoremap']"));
 
 }

@@ -14,9 +14,7 @@ public class register implements Task
   private String name,pasword;
   RegisterUser data;
 
-    public register(String name, String pasword, RegisterUser data) {
-        this.name = name;
-        this.pasword = pasword;
+    public register(RegisterUser data) {
         this.data = data;
     }
 
@@ -25,6 +23,7 @@ public class register implements Task
         name = data.getUserID();
         pasword = data.getPassword();
         actor.attemptsTo(
+                Click.on(Logginn.SIG_IN),
                 Click.on(Register.REGISTER_NOW),
                 Enter.theValue(name).into(Register.USER_ID),
                 Enter.theValue(pasword).into(Register.NEW_PASSWORD),
