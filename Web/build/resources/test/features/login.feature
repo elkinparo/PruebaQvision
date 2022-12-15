@@ -8,5 +8,6 @@ Feature: as a quality analyst
   @login
   Scenario: log in to the page
     Given  actor opens browser
-    When  I send the username and password
-    Then  look at the pets page
+    When  send unregistered username and password
+    Then I see the message from "Invalid username or password. Signon failed."
+

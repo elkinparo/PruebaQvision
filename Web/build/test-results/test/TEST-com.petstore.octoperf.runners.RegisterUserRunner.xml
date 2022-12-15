@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.petstore.octoperf.runners.RegisterUserRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-12-15T16:12:01" hostname="SISTE821" time="7.762">
+  <properties/>
+  <testcase name="register user in the page" classname="com.petstore.octoperf.runners.RegisterUserRunner" time="7.762">
+    <failure message="java.lang.IllegalArgumentException: Could not find a matching constructor for class class com.petstore.octoperf.tasks.register with parameters [com.petstore.octoperf.models.RegisterUser@52a17469]" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Could not find a matching constructor for class class com.petstore.octoperf.tasks.register with parameters [com.petstore.octoperf.models.RegisterUser@52a17469]
+	at net.thucydides.core.steps.StepFactory.argumentTypesFrom(StepFactory.java:307)
+	at net.thucydides.core.steps.StepFactory.immutableStepLibrary(StepFactory.java:295)
+	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:251)
+	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:219)
+	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:153)
+	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at com.petstore.octoperf.tasks.register.format(register.java:52)
+	at com.petstore.octoperf.stepdefinitions.RegisterUserStepDefinitions.theActorIsRegisterInThePage(RegisterUserStepDefinitions.java:20)
+	at ✽.the actor is register in the page(file:///C:/Users/epalacios/Desktop/Repos/PruebaQvision/Web/src/test/resources/features/registeruser.feature:11)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 59502
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 15, 2022 11:12:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+dic 15, 2022 11:12:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 108, so returning the closest version found: a no-op implementation
+dic 15, 2022 11:12:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 108.
+dic 15, 2022 11:12:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
